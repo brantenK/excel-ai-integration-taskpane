@@ -1,0 +1,57 @@
+{
+  "name": "excel-ai-integration-taskpane",
+  "version": "1.0.0",
+  "description": "Advanced Excel AI Integration with bidirectional data operations, xlwings backend, and comprehensive targeting support",
+  "main": "src/taskpane/taskpane.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "dev-server": "webpack serve --mode development",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prettier": "prettier --write src/**/*.ts src/**/*.html src/**/*.css",
+    "start": "webpack serve --mode development",
+    "stop": "npx kill-port 3000",
+    "validate": "npx office-addin-manifest validate manifest.xml",
+    "python-server": "node python-server.js"
+  },
+  "keywords": [
+    "Excel",
+    "Office Add-in",
+    "AI",
+    "xlwings",
+    "Task Pane",
+    "OpenRouter",
+    "Python",
+    "Flask"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.0",
+    "@types/office-js": "^1.0.366",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.49.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.0.3",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "core-js": "^3.32.2",
+    "regenerator-runtime": "^0.14.0"
+  }
+}
